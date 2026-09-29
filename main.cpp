@@ -9,8 +9,8 @@ int main(){
         std::cout << "directory not found!" << std::endl;
     } else {
         std::cout << path << std::endl;
-        std::cout << "Number of files: "<< countFiles(&path) << std::endl;
-        std::cout << "Number of directories: "<< countDirectories(&path) << std::endl;
+        std::cout << "Number of files: " << countFiles(&path) << std::endl;
+        std::cout << "Number of directories: " << countDirectories(&path) << std::endl;
     }
     std::filesystem::path clear(path);
     path.~path();
