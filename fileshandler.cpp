@@ -7,7 +7,7 @@ int countFiles(const std::filesystem::path path) {
     std::filesystem::path temp_path;
     for (const auto& entry: std::filesystem::recursive_directory_iterator{path}) { //scans recursively in search of files
         if (!entry.is_directory() && checkextension(entry)){
-        std::cout << entry << std::endl; // prints every file path and name (used for debug)
+        //std::cout << entry << std::endl; // prints every file path and name (used for debug)
         numberFiles++;
         }
     }
